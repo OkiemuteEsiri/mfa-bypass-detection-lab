@@ -1,0 +1,72 @@
+[
+  {
+    "event_id": "evt-001",
+    "timestamp": "2026-09-01T09:00:00Z",
+    "user": "analyst.alpha@example.invalid",
+    "source_ip": "198.51.100.10",
+    "result": "success",
+    "mfa_state": "not_satisfied",
+    "auth_method": "password",
+    "device_trust": false,
+    "conditional_access_applied": false,
+    "risk_level": "high",
+    "country": "IE",
+    "app": "Synthetic Finance Portal"
+  },
+  {
+    "event_id": "evt-002",
+    "timestamp": "2026-09-01T10:00:00Z",
+    "user": "engineer.beta@example.invalid",
+    "source_ip": "203.0.113.20",
+    "result": "failure",
+    "mfa_state": "not_satisfied",
+    "auth_method": "password",
+    "device_trust": true,
+    "conditional_access_applied": true,
+    "risk_level": "medium",
+    "country": "IE",
+    "app": "Synthetic Admin Console"
+  },
+  {
+    "event_id": "evt-003",
+    "timestamp": "2026-09-01T10:06:00Z",
+    "user": "engineer.beta@example.invalid",
+    "source_ip": "203.0.113.20",
+    "result": "interrupted",
+    "mfa_state": "not_satisfied",
+    "auth_method": "push",
+    "device_trust": true,
+    "conditional_access_applied": true,
+    "risk_level": "medium",
+    "country": "IE",
+    "app": "Synthetic Admin Console"
+  },
+  {
+    "event_id": "evt-004",
+    "timestamp": "2026-09-01T10:11:00Z",
+    "user": "engineer.beta@example.invalid",
+    "source_ip": "203.0.113.20",
+    "result": "success",
+    "mfa_state": "satisfied",
+    "auth_method": "fido2",
+    "device_trust": true,
+    "conditional_access_applied": true,
+    "risk_level": "low",
+    "country": "IE",
+    "app": "Synthetic Admin Console"
+  },
+  {
+    "event_id": "evt-005",
+    "timestamp": "2026-09-01T11:00:00Z",
+    "user": "user.gamma@example.invalid",
+    "source_ip": "192.0.2.44",
+    "result": "success",
+    "mfa_state": "satisfied",
+    "auth_method": "fido2",
+    "device_trust": true,
+    "conditional_access_applied": true,
+    "risk_level": "low",
+    "country": "IE",
+    "app": "Synthetic HR Portal"
+  }
+]
